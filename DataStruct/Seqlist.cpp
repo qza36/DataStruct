@@ -17,6 +17,7 @@ public:
 	SeqList(T a[], int n);
 	~SeqList(){} //析构函数
 	//按位插入
+	void Insert(int locate,T x);
 	//按值插入
 	void Print(); //输出顺序表
 
@@ -28,6 +29,16 @@ SeqList<T>::SeqList(T a[], int n)
 	for(int k =0 ; k < length; k++)
 		data[k] = a[k];
 }
+
+template <class T>
+void SeqList<T>::Insert(int locate, T x)
+{
+	//从最后一个元素开始到第locate个元素依次向后移动
+	for(knt k = length; k > locate; k--)
+		data[k] = data[k-1];
+	data[locate] = x;
+	length++;
+} //插入元素
 
 template <class T>
 void SeqList<T>::Print() 
