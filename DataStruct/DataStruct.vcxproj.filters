@@ -18,7 +18,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DSOJ1004.cpp">
+    <ClCompile Include="DSOJ1000.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

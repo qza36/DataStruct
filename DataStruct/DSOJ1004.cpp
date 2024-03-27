@@ -124,8 +124,8 @@ void LinkList<T>::Reverse() {
 template<class T>
 void LinkList<T>::DispList() {
 	Node<T>* p = first->next;
-	cout << "The length : " << Length() << endl;
-	cout << "The elements :" << endl;
+	cout << "The length:" << Length() << endl;
+	cout << "The elements:" << endl;
 	while (p != NULL) {
 		cout << p->data << " ";
 		p = p->next;
